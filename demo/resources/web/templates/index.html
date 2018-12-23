@@ -1,0 +1,7 @@
+{{define "index"}}
+    <div class="index">
+        {{range $i, $c := (.Src.Collection "*").ByTitle}}
+            <h1><a href="{{$.Obj.Rel $c.ObjPath}}">{{$c.Title}}</a></h1>
+        {{end}}
+    </div>
+{{end}}
