@@ -1,7 +1,3 @@
 outputs:
   web:
     - generator: web/output
-
-    - generator: web/index
-      output: index.html
-      template: index
